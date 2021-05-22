@@ -20,4 +20,4 @@ script:
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push ta9i/udagram-feed-node-udacity
+  - docker push ta9i/udagram-feed-node-udacity:latest
