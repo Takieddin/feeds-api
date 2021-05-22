@@ -15,8 +15,8 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t udagram-user-node-udacity .
-  - docker tag udagram-user-node-udacity ta9i/udagram-user-node-udacity:latest
+  - docker build -t udagram-feed-node-udacity .
+  - docker tag udagram-feed-node-udacity ta9i/udagram-feed-node-udacity:latest
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
