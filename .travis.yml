@@ -16,8 +16,9 @@ before_script:
 script:
   - docker --version # print the version for logging
   - docker build -t udagram-feed-node-udacity .
-  - docker tag udagram-feed-node-udacity ta9i/udagram-feed-node-udacity:latest
+  - docker images
+  - docker tag udagram-feed-node-udacity ta9i/udagram-feed-node-udacity
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push ta9i/udagram-feed-node-udacity:latest
+  - docker push ta9i/udagram-feed-node-udacity
