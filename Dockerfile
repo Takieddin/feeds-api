@@ -13,6 +13,9 @@ RUN npm install
 
 # Copy app from local environment into the Docker image
 COPY . .
+RUN pwd
+RUN ls  
+
 
 # Set the API’s port number
 EXPOSE 80
