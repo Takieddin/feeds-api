@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: udagram-feed-node-udacity
+  name: udagram-feed-node-udacity 
   labels:
     app: udagram-feed-node-udacity
 spec:
