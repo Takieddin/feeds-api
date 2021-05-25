@@ -21,4 +21,4 @@ RUN ls
 EXPOSE 80
 
 # Define Docker’s behavior when the image  is run
-CMD ["node", "./src/server.ts"]
+CMD ["npm", "run prod"]
