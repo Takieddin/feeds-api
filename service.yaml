@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: udagram-feed-node-udacity
+  labels:
+    run: udagram-feed-node-udacity
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    run: udagram-feed-node-udacity
