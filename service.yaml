@@ -4,6 +4,7 @@ metadata:
   name: udagram-feed-node-udacity 
   labels:
     run: udagram-feed-node-udacity
+    role: db
 spec:
   ports:
   - port: 8080

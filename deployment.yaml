@@ -4,6 +4,7 @@ metadata:
   name: udagram-feed-node-udacity 
   labels:
     app: udagram-feed-node-udacity
+    role: db
 spec:
   replicas: 2
   selector:
